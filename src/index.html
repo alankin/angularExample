@@ -19,10 +19,12 @@
 
     <script src="lib/color.js"></script>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/chat-window.css">
 </head>
 
 <body>
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
             <color-palette></color-palette>
@@ -40,7 +42,19 @@
             </div>
         </div>
     </div>
+</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!--<card></card>-->
+            <chat-window></chat-window>
+
+        </div>
+
+    </div>
 </div>
+
 
 
 <script src="app/app.module.js"></script>
@@ -59,6 +73,12 @@
 
 <script src="app/mockup/mockup.component.js"></script>
 <script src="app/mockup/mockup.controller.js"></script>
+
+<script src="app/card/card.component.js"></script>
+<script src="app/card/card.controller.js"></script>
+
+<script src="app/chat/chat-window.component.js"></script>
+<script src="app/chat/chat-window.controller.js"></script>
 
 </body>
 </html>

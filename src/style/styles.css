@@ -5,6 +5,19 @@
 */
 
 /**********button****************/
+:root {
+    --base-primary-color:  #757575;
+    --dark-primary-color: #757575;
+    --light-primary-color: #757575;
+    --text-icon-color: #FFFFF;
+
+    --base-accent-color: #757575;
+    --light-accent-color: #757575;
+    --primary-text-color: #757575;
+    --secondary-text-color: #757575;
+    --line-color: #757575;
+}
+
 .btn-base {
     display: inline-block;
     padding: 5px 10px;
@@ -23,8 +36,13 @@
     cursor: pointer;
     border: 1px solid transparent;
 }
+.btn-icon{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
 .btn-accent{
-    background-color: #F39200;
+    background-color: var(--base-accent-color);
     border-color: #F39200;
     color: #ffffff;
 }
@@ -143,7 +161,7 @@
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #777;
+    background-color: #777777;
     border-radius: 8px;
 }
 
@@ -171,12 +189,12 @@
 
 /**********label****************/
 .lb-base{
+    padding: 5px 2px;
     display: inline;
     font-size: 95%;
     font-weight: 700;
     line-height: 1.2;
     color: #4e4b44;
-    text-align: center;
     vertical-align: baseline;
 }
 .lb-accent{
@@ -187,6 +205,9 @@
 }
 .lb-minor{
     color: #007F7F;
+}
+.lb-light{
+    color: #FFFFFF;
 }
 
 /**********picture/image****************/
@@ -218,4 +239,16 @@
 }
 .txt-accent{
 
+}
+
+.div-left{
+    border-left: 1px solid #777777;;
+}
+.div-major{
+    border-left: 1px solid #0F669E;;
+    height: 1px;
+    background-color: #00b3ee;
+}
+.div-light{
+    border-left: 1px solid #FFFFFF;;
 }
