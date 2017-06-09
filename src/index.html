@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theme Example</title>
+
+    <!--bower:css-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+    <!--endbower-->
+    <!--bower:js-->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--endbower-->
+
+    <script src="lib/color.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <color-palette></color-palette>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <mockup></mockup>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <theme-palette></theme-palette>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app/app.module.js"></script>
+<script src="app/color-item/color-item.component.js"></script>
+<script src="app/color-item/color-item.controller.js"></script>
+
+<script src="app/color-palette/color-palette.component.js"></script>
+<script src="app/color-palette/color-palette.controller.js"></script>
+<script src="app/color-palette/color-palette.service.js"></script>
+
+<script src="app/theme-item/theme-item.component.js"></script>
+<script src="app/theme-item/theme-item.controller.js"></script>
+
+<script src="app/theme-palette/theme-palette.component.js"></script>
+<script src="app/theme-palette/theme-palette.controller.js"></script>
+
+<script src="app/mockup/mockup.component.js"></script>
+<script src="app/mockup/mockup.controller.js"></script>
+
+</body>
+</html>
