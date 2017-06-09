@@ -13,10 +13,8 @@
         var vm = this;
 
         $rootScope.$on('theme-colors', function (event, colors) {
-            //console.log(stylus);
             vm.primaryColor = colors.primary;
             vm.accentColor = colors.accent;
-            vm.textSecondary = "#757575";
         });
     }
 })();

@@ -10,6 +10,5 @@
 
     function ThemeItemController(){
         var vm = this;
-        console.log(vm.color);
     }
 })();

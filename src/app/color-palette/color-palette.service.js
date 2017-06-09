@@ -28,14 +28,18 @@
             var keyColors = keysColors(key);
             if (keyColors.isPrimary) {
                 primaryColors = {
-                    "dark": (keyColors.dark == '1000') ? "#000000" : colors[keyColors.dark],
-                    "primary": colors[keyColors.primary],
-                    "light": (keyColors.light == '0') ? "#FFFFFF" : colors[keyColors.light]
+                    "dark": (keyColors.dark == '1000') ? "#30444a" : colors[keyColors.dark],
+                    "base": colors[keyColors.primary],
+                    "light": (keyColors.light == '0') ? "#FFFFFF" : colors[keyColors.light],
+                    "texticon": "#FFFFFF"
                 };
             } else {
                 accentColors = {
-                    "accent": colors[keyColors.accent],
-                    "light": colors[keyColors.light]
+                    "base": colors[keyColors.accent],
+                    "light": colors[keyColors.light],
+                    "pritext": "#404040",
+                    "sectext":"#757575",
+                    "line": "#BDBDBD"
                 };
             }
             $rootScope.$emit('theme-colors', {
@@ -47,7 +51,7 @@
 
         function keysColors(key) {
             var result;
-            if (key.indexOf('A') === -1) {
+            if (key && key.indexOf('A') === -1) {
                 var _keyPrimary = parseInt(key);
                 var darkPrimaryKey, lightPrimaryKey;
 
