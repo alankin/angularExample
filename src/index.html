@@ -1,78 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="chat">
-
+<html lang="en" ng-app="chat" ng-app="chat" ng-controller="chatController as vm">
 <head>
-  <title></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" />
-  <!-- endbower -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+    <!-- endbower -->
 
-  <link rel="stylesheet" href="assets/css/chat-window.css">
-  <link rel="stylesheet" href="assets/css/base.css">
+    <!--<link rel="stylesheet" href="assets/css/chat-window.css">
+    <link rel="stylesheet" href="assets/css/base.css">-->
+    <link rel="stylesheet" ng-href="assets/css/{{vm.css_theme}}.css">
 
-  <!-- bower:js -->
-  <script src="../bower_components/angular/angular.js"></script>
-  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <!-- endbower -->
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- endbower -->
 
-  <script src="app.module.js"></script>
+    <script src="app.module.js"></script>
 
-  <!--components-->
-  <!-- <script src="./components/chat/chat.controller.js"></script> -->
-  <!-- <script src="./components/chat/chat.component.js"></script> -->
+    <!--components-->
+    <!-- <script src="./components/chat/chat.controller.js"></script> -->
+    <!-- <script src="./components/chat/chat.component.js"></script> -->
 
-  <script src="app/chat/chat-window.component.js"></script>
-  <script src="app/chat/chat-window.controller.js"></script>
-  <script src="app/chat/message-test.values.js"></script>
+    <script src="app/chat/chat-window.component.js"></script>
+    <script src="app/chat/chat-window.controller.js"></script>
+    <script src="app/chat/message-test.values.js"></script>
 
-  <script src="app/chat/chat-header/chat-header.component.js"></script>
-  <script src="app/chat/chat-header/chat-header.controller.js"></script>
+    <script src="app/chat/chat-header/chat-header.component.js"></script>
+    <script src="app/chat/chat-header/chat-header.controller.js"></script>
 
-  <script src="app/chat/chat-message/chat-message.component.js"></script>
-  <script src="app/chat/chat-message/chat-message.controller.js"></script>
+    <script src="app/chat/chat-message/chat-message.component.js"></script>
+    <script src="app/chat/chat-message/chat-message.controller.js"></script>
 
-  <script src="app/chat/chat-footer/chat-footer.component.js"></script>
-  <script src="app/chat/chat-footer/chat-footer.controller.js"></script>
+    <script src="app/chat/chat-footer/chat-footer.component.js"></script>
+    <script src="app/chat/chat-footer/chat-footer.controller.js"></script>
 
-  <script src="app/help/help-window.component.js"></script>
-  <script src="app/help/help-window.controller.js"></script>
+    <script src="app/help/help-window.component.js"></script>
+    <script src="app/help/help-window.controller.js"></script>
 
-  <script src="app/help/card/card.component.js"></script>
-  <script src="app/help/card/card.controller.js"></script>
+    <script src="app/help/card/card.component.js"></script>
+    <script src="app/help/card/card.controller.js"></script>
 
-  <script src="app/help/help-header/help-header.component.js"></script>
-  <script src="app/help/help-header/help-header.controller.js"></script>>
-
-
-
+    <script src="app/help/help-header/help-header.component.js"></script>
+    <script src="app/help/help-header/help-header.controller.js"></script>
+    >
 
 
-  <!--route-->
-  <script src="app.route.js"></script>
+    <!--route-->
+    <script src="app.route.js"></script>
 
 </head>
 
 <body>
-  <!--<ui-view></ui-view>-->
+<!--<ui-view></ui-view>-->
 
+    <div class="col-md-offset-10 col-md-2">
+        <form>
+            <div class="form-group">
+                <label>Select Theme</label>
+                <select class="form-control" ng-model="vm.css_theme"
+                        ng-options="theme.url as theme.name for theme in vm.themes">
+                </select>
+            </div>
+        </form>
+    </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <chat-window></chat-window>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <chat-window></chat-window>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <help-window></help-window>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <help-window></help-window>
-      </div>
-    </div>
-  </div>
 </body>
-
 </html>

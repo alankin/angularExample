@@ -1,0 +1,19 @@
+/*--------   Blocks   --------*/
+.chat-base {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+/*--------   Modifier   --------*/
+.chat-base--default {
+    border: 1px solid #9b9b9b;
+}
+
+.chat-base--primary {
+    border: 1px solid #0F669E;
+}
+

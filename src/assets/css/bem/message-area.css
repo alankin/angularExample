@@ -1,0 +1,29 @@
+.message-area {
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+
+    border-top: 1px solid #0F669E;
+    padding-right: 0.3em;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.message-area__input {
+    border: none;
+    width: 85%;
+}
+
+.message-area__submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #0F669E;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+}

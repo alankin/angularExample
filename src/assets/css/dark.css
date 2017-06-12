@@ -1,0 +1,433 @@
+/*
+ Theme Name: Simple Test
+ Description: Styles for the card component
+ Author: Nicaela Onofre
+*/
+/**********button****************/
+.btn-base {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-icon {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.btn-accent {
+  background-color: #ffecb3;
+  border-color: #bcaaa4;
+  color: #fff;
+}
+.btn-good {
+  background-color: #388e3c;
+  border-color: #00c853;
+  color: #fff;
+}
+.btn-major {
+  background-color: #5d4037;
+  border-color: #5d4037;
+  color: #fff;
+}
+.btn-notice {
+  background-color: #607d8b;
+  border-color: #607d8b;
+  color: #fff;
+}
+.btn-preset {
+  background-color: #fff;
+  border-color: #a6a6a6;
+  color: #fff;
+}
+.btn-transparent {
+  background-color: transparent;
+}
+.btn-wrong {
+  background-color: #d50000;
+  border-color: #c62828;
+  color: #fff;
+}
+.btn-long {
+  padding: 9px 16px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.btn-medium {
+  padding: 4px 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.btn-small {
+  padding: 1px 4px;
+  font-size: 10px;
+  line-height: 1.6;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+/**********card****************/
+.card {
+  min-height: 20px;
+  padding: 8px;
+  margin: 10px;
+  background-color: #ececee;
+  border: 1px solid #b4b5bd;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 0 3px 8px #8e909c;
+  -webkit-box-shadow: 0 3px 8px #8e909c;
+  -moz-box-shadow: 0 3px 8px #8e909c;
+  -o-box-shadow: 0 3px 8px #8e909c;
+}
+.card-accent {
+  background-color: #ffecb3;
+  border-color: #bcaaa4;
+}
+.card-good {
+  background-color: #00e676;
+  border-color: #388e3c;
+}
+.card-major {
+  background-color: #efebe9;
+  border-color: #5d4037;
+}
+.card-notice {
+  background-color: #efebe9;
+  border-color: #5d4037;
+}
+.card-preset {
+  background-color: #fff;
+  border-color: #bfbfbf;
+}
+.card-wrong {
+  background-color: #ff1744;
+  border-color: #d50000;
+}
+.card-long {
+  padding: 12px;
+  width: 800px;
+}
+.card-medium {
+  padding: 8px;
+  width: 600px;
+/*border-radius*/
+}
+.card-small {
+  width: 400px;
+  padding: 4px;
+/*border-radius*/
+}
+/**********decoration****************/
+.deco {
+  display: inline-block;
+  min-width: 8px;
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  color: #1a1a1a;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #b4b5bd;
+  border-radius: 8px;
+}
+.deco-accent {
+  background-color: #bcaaa4;
+  color: #fff;
+}
+.deco-major {
+  background-color: #5d4037;
+  color: #fff;
+}
+.deco-good {
+  background-color: #00c853;
+  color: #fff;
+}
+.deco-wrong {
+  background-color: #d50000;
+  color: #fff;
+}
+/**********icon****************/
+.icon-base {
+  font-size: 20px;
+}
+/**********label****************/
+.lb-base {
+  padding: 5px 0;
+  display: inline;
+  font-size: 96%;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333;
+/*vertical-align baseline*/
+}
+.lb-accent {
+  color: #bcaaa4;
+}
+.lb-good {
+  color: #00c853;
+}
+.lb-major {
+  color: #5d4037;
+}
+.lb-notice {
+  color: #607d8b;
+}
+.lb-preset {
+  color: #fff;
+}
+.lb-wrong {
+  color: #00c853;
+}
+/**********picture/image****************/
+.pic-circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.pic-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+/*min-width 50px
+  min-height 50px*/
+}
+/**********text****************/
+.txt {
+  font-weight: 400;
+  font-size: 96%;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 5px;
+}
+.txt-align-right {
+  text-align: right;
+}
+.txt-align-left {
+  text-align: left;
+}
+/*media queries*/
+@media only screen and (max-width: 450px) {
+  .pic-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+/*
+ Theme Name: Simple Test
+ Description: Styles for the card component
+ Author: Nicaela Onofre
+*/
+.window-base {
+  margin: 10px;
+  padding: 0 15px;
+  background-color: #ececee;
+  border: 1px solid #333;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 0 1px 1px #8e909c;
+  -webkit-box-shadow: 0 1px 1px #8e909c;
+  -moz-box-shadow: 0 1px 1px #8e909c;
+}
+.window-major {
+  background-color: #fff;
+  border: 1px solid #5d4037;
+}
+.header-base {
+  padding: 5px 8px;
+  border: 1px solid #333;
+  background-color: #ececee;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+}
+.header-major {
+  border: 2px solid #5d4037;
+  background-color: #bcaaa4;
+  color: #fff;
+}
+.footer-base {
+  padding: 5px 8px;
+  border-top: 1px solid #5d4037;
+  border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+}
+.msg-base {
+  margin: 5px;
+}
+.msg-bubble {
+  padding: 5px;
+  position: relative;
+  min-width: 65px;
+  height: auto;
+  background-color: #ececee;
+  border: 2px solid #333;
+  border-radius: 12px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  font-size: 12px;
+}
+/*message bubble left*/
+.msg-bubble-left:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -25px;
+  right: auto;
+  top: 18px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: transparent #333 transparent transparent;
+}
+.msg-bubble-left:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -22px;
+  right: auto;
+  top: 18px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: transparent #ececee transparent transparent;
+}
+/*message bubble left accent*/
+.msg-bubble-left-accent:before {
+  border-color: transparent #bcaaa4 transparent transparent;
+}
+.msg-bubble-left-accent:after {
+  border-color: transparent #ffecb3 transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent {
+  background-color: #ffecb3;
+  border-color: #bcaaa4;
+}
+/*message bubble left accent*/
+.msg-bubble-left-accent-dark3:before {
+  border-color: transparent #ffa000 transparent transparent;
+}
+.msg-bubble-left-accent-dark3:after {
+  border-color: transparent #ffecb3 transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent-dark3 {
+  background-color: #ffecb3;
+  border-color: #ffa000;
+}
+/*message bubble left major*/
+.msg-bubble-left-major:before {
+  border-color: transparent #5d4037 transparent transparent;
+}
+.msg-bubble-left-major:after {
+  border-color: transparent #efebe9 transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-major {
+  background-color: #efebe9;
+  border-color: #5d4037;
+}
+/*message bubble-right*/
+.msg-bubble-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -25px;
+  top: 18px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: transparent transparent transparent #333;
+}
+.msg-bubble-right:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -22px;
+  top: 18px;
+  bottom: auto;
+  border: 12px solid;
+  border-color: transparent transparent transparent #ececee;
+}
+/*message bubble-right-accent*/
+.msg-bubble-right-accent:before {
+  border-color: transparent transparent transparent #ff6f00;
+}
+.msg-bubble-right-accent:after {
+  border-color: transparent transparent transparent #ffecb3;
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-accent {
+  background-color: #ffecb3;
+  border-color: #ff6f00;
+}
+/*message bubble-right-good-dark3*/
+.msg-bubble-right-good-dark3:before {
+  border-color: transparent transparent transparent #1b5e20;
+}
+.msg-bubble-right-good-dark3:after {
+  border-color: transparent transparent transparent #00e676;
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-good-dark3 {
+  background-color: #00e676;
+  border-color: #1b5e20;
+}
+/*message bubble-right-major*/
+.msg-bubble-right-major:before {
+  border-color: transparent transparent transparent #5d4037;
+}
+.msg-bubble-right-major:after {
+  border-color: transparent transparent transparent #efebe9;
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-major {
+  background-color: #efebe9;
+  border-color: #5d4037;
+}
+/*media queries*/
+@media only screen and (max-width: 420px) {
+  .msg-bubble-right:after,
+  .msg-bubble-right:before {
+    content: none;
+  }
+  .msg-bubble-left:after,
+  .msg-bubble-left:before {
+    content: none;
+  }
+  .avatar {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 245px) {
+  .msg-bubble {
+    width: 90%;
+  }
+  .avatar {
+    display: none;
+  }
+}
