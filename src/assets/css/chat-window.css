@@ -239,6 +239,28 @@
 
 
 
+/*media queries*/
+
+@media only screen and (max-width: 420px) {
+    .msg-bubble-right:after, .msg-bubble-right:before{
+        content: none;
+    }
+    .msg-bubble-left:after, .msg-bubble-left:before{
+        content: none;
+    }
+    .avatar{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 245px) {
+    .msg-bubble{
+        width: 90%;
+    }
+    .avatar{
+        display: none;
+    }
+}
+
 
 
 

@@ -281,10 +281,11 @@
     -moz-border-radius: 50%;
 }
 .pic-responsive{
+    display: block;
     max-width: 100%;
     height: auto;
-    /*min-width: 100px;
-    min-height: 100px;*/
+    /*min-width: 50px;
+    min-height: 50px;*/
 }
 
 /**********text****************/
@@ -300,4 +301,16 @@
 }
 .txt-align-left{
     text-align: left;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 450px) {
+    .pic-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        min-width: 40px;
+        min-height: 40px;
+    }
 }
