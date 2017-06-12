@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" />
   <!-- endbower -->
 
+  <link rel="stylesheet" href="assets/css/chat-window.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
   <!-- bower:js -->
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -23,13 +26,42 @@
   <!-- <script src="./components/chat/chat.controller.js"></script> -->
   <!-- <script src="./components/chat/chat.component.js"></script> -->
 
+  <script src="app/chat/chat-window.component.js"></script>
+  <script src="app/chat/chat-window.controller.js"></script>
+  <script src="app/chat/message-test.values.js"></script>
+
+  <script src="app/chat/chat-header/chat-header.component.js"></script>
+  <script src="app/chat/chat-header/chat-header.controller.js"></script>
+
+  <script src="app/chat/chat-message/chat-message.component.js"></script>
+  <script src="app/chat/chat-message/chat-message.controller.js"></script>
+
+  <script src="app/chat/chat-footer/chat-footer.component.js"></script>
+  <script src="app/chat/chat-footer/chat-footer.controller.js"></script>
+
+
+
+
+
   <!--route-->
   <script src="app.route.js"></script>
 
 </head>
 
-<body class="container">
-  <ui-view></ui-view>
+<body>
+  <!--<ui-view></ui-view>-->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!--<card></card>-->
+        <chat-window></chat-window>
+
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>

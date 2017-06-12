@@ -1,0 +1,245 @@
+/*
+ Theme Name: Simple Test
+ Description: Styles for the card component
+ Author: Nicaela Onofre
+*/
+:root {
+    /*major*/
+    --major-light1-color: #e8f5fd;
+    --major-light2-color: #44adee;
+    --major-light3-color: #1489d2;
+    --major-color: #0F669E;
+    --major-dark1-color: #0d5b8c;
+    --major-dark2-color: #0b4c75;
+    --major-dark3-color: #093d5d;
+    /*accent*/
+    --accent-light1-color: #fff5e6;
+    --accent-light2-color: #ffe0b3;
+    --accent-light3-color: #ffa31a;
+    --accent-color: #F39200;
+    --accent-dark1-color: #e68a00;
+    --accent-dark2-color: #cc7a00;
+    --accent-dark3-color: #b36b00;
+    /*notice*/
+    --notice-light1-color: #f2f2f3;
+    --notice-light2-color: #b0b3b5;
+    --notice-light3-color: #898d90;
+    --notice-color: #626669;
+    --notice-dark1-color: #575a5c;
+    --notice-dark2-color: #4a4d4f;
+    --notice-dark3-color: #3e4042;
+    /*good*/
+    --good-light1-color: #edf8ed;
+    --good-light2-color: #e3f1da;
+    --good-light3-color: #bcdfb9;
+    --good-color: #4aaf46;
+    --good-dark1-color: #3d8f3d;
+    --good-dark2-color: #007f7f;
+    --good-dark3-color: #007f7f;
+    /*wrong*/
+    --wrong-light1-color: #fbd4d0;
+    --wrong-light2-color: #fbd3d0;
+    --wrong-light3-color: #f47e71;
+    --wrong-color: #c5210f;
+    --wrong-dark1-color: #a61c0c;
+    --wrong-dark2-color: #8e180b;
+    --wrong-dark3-color: #77140;
+    /*preset*/
+    --preset-light1-color: #f2f2f2;
+    --preset-light2-color: #e6e6e6;
+    --preset-light3-color: #d9d9d9;
+    --preset-color: #ffffff;
+    --preset-dark1-color: #cccccc;
+    --preset-dark2-color: #bfbfbf;
+    --preset-dark3-color: #a6a6a6;
+    /*basic*/
+    --basic-color: #ececee;
+    --basic-light1-color: #c6c7cd;
+    --basic-light2-color: #b4b5bd;
+    --basic-light3-color: #8e909c;
+    --basic-dark1-color: #333333;
+    --basic-dark2-color: #1a1a1a;
+    --basic-dark3-color: #000000;
+}
+
+.window-base{
+    margin: 10px;
+    padding: 0 15px;
+    background-color: var(--basic-color);
+    border: 1px solid var(--basic-dark1-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 0 1px 1px var(--basic-light3-color);
+    -webkit-box-shadow: 0 1px 1px var(--basic-light3-color);
+    -moz-box-shadow: 0 1px 1px var(--basic-light3-color);
+}
+.window-major{
+    background-color: var(--preset-color);
+    border: 1px solid var(--major-color);
+}
+.header-base{
+    padding: 5px 8px;
+    border: 1px solid var(--basic-dark1-color);
+    background-color: var(--basic-color);
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+}
+.header-major{
+    border: 2px solid var(--major-color);
+    background-color: var(--major-dark1-color);
+    color: var(--preset-color);
+}
+
+.footer-base{
+    padding: 5px 8px;
+    border-top: 1px solid var(--major-color);
+    border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+}
+
+.msg-base{
+    margin: 5px;
+}
+
+.msg-bubble {
+    padding: 5px;
+    position: relative;
+    min-width: 65px;
+    height: auto;
+    background-color: var(--basic-color);
+    border: 2px solid var(--basic-dark1-color);
+    border-radius: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-size: 12px;
+}
+/*message bubble left*/
+.msg-bubble-left:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -25px;
+    right: auto;
+    top: 18px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: transparent var(--basic-dark1-color) transparent transparent;
+}
+
+.msg-bubble-left:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -22px;
+    right: auto;
+    top: 18px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: transparent var(--basic-color) transparent transparent;
+}
+/*message bubble left accent*/
+.msg-bubble-left-accent:before{
+    border-color: transparent var(--accent-color) transparent transparent;
+}
+.msg-bubble-left-accent:after{
+    border-color: transparent var(--accent-light1-color) transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent{
+    background-color: var(--accent-light1-color);
+    border-color: var(--accent-color);
+
+}
+/*message bubble left accent*/
+.msg-bubble-left-accent-dark3:before{
+    border-color: transparent var(--accent-dark2-color) transparent transparent;
+}
+.msg-bubble-left-accent-dark3:after{
+    border-color: transparent var(--accent-light1-color) transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent-dark3{
+    background-color: var(--accent-light1-color);
+    border-color: var(--accent-dark2-color);
+
+}
+/*message bubble left major*/
+.msg-bubble-left-major:before{
+    border-color: transparent var(--major-color) transparent transparent;
+}
+.msg-bubble-left-major:after{
+    border-color: transparent var(--major-light1-color) transparent transparent;
+}
+.msg-bubble.msg-bubble-left.msg-bubble-left-major{
+    background-color: var(--major-light1-color);
+    border-color: var(--major-color);
+}
+
+/*message bubble-right*/
+.msg-bubble-right:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -25px;
+    top: 18px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: transparent transparent transparent var(--basic-dark1-color);
+}
+.msg-bubble-right:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -22px;
+    top: 18px;
+    bottom: auto;
+    border: 12px solid;
+    border-color: transparent transparent transparent var(--basic-color);
+}
+/*message bubble-right-accent*/
+.msg-bubble-right-accent:before{
+    border-color: transparent transparent transparent var(--accent-dark3-color);
+}
+.msg-bubble-right-accent:after{
+    border-color: transparent transparent transparent var(--accent-light1-color);
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-accent{
+    background-color: var(--accent-light1-color);
+    border-color: var(--accent-dark3-color);
+}
+/*message bubble-right-good-dark3*/
+.msg-bubble-right-good-dark3:before{
+    border-color: transparent transparent transparent var(--good-dark3-color);
+}
+.msg-bubble-right-good-dark3:after{
+    border-color: transparent transparent transparent var(--good-light1-color);
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-good-dark3{
+    background-color: var(--good-light1-color);
+    border-color: var(--good-dark3-color);
+}
+/*message bubble-right-major*/
+.msg-bubble-right-major:before{
+    border-color: transparent transparent transparent var(--major-color);
+}
+.msg-bubble-right-major:after{
+    border-color: transparent transparent transparent var(--major-light1-color);
+}
+.msg-bubble.msg-bubble-right.msg-bubble-right-major{
+    background-color: var(--major-light1-color);
+    border-color: var(--major-color);
+}
+
+
+
+
+
+
+
