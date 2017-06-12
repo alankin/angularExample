@@ -11,6 +11,7 @@
 
     function ChatHeaderController() {
         var vm = this;
+        vm.title = "Social chat on business license number";
 
     }
 })();

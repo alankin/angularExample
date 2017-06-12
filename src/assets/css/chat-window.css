@@ -15,6 +15,10 @@
   -webkit-box-shadow: 0 1px 1px #8e909c;
   -moz-box-shadow: 0 1px 1px #8e909c;
 }
+.window-accent {
+  background-color: #fff;
+  border: 1px solid #f39200;
+}
 .window-major {
   background-color: #fff;
   border: 1px solid #0f669e;
@@ -26,6 +30,11 @@
   border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
+}
+.header-accent {
+  border: 2px solid #f39200;
+  background-color: #e68a00;
+  color: #fff;
 }
 .header-major {
   border: 2px solid #0f669e;

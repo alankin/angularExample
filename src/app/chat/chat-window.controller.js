@@ -13,6 +13,7 @@
         var vm = this;
 
         vm.$onInit = function () {
+
             vm.loadTestValues();
         };
         vm.loadTestValues = function () {
