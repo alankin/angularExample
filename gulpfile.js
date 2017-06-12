@@ -32,11 +32,11 @@
 
   gulp.task('compile-css', function(){
     gulp.src([
-      './src/assets/test/stylus/base.styl',
-      './src/assets/test/stylus/chat-window.styl'
+      './src/assets/stylus/base.styl',
+      './src/assets/stylus/chat-window.styl'
     ])
     .pipe(stylus())
-    .pipe(gulp.dest('./src/assets/test/css/'));
+    .pipe(gulp.dest('./src/assets/css/'));
   });
 
   gulp.task('default', ['development']);
