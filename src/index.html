@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/chat-window.css">
+
+    <link rel="stylesheet" href="style/bem/chat-base.css">
+    <link rel="stylesheet" href="style/bem/chat-nav-bar.css">
+    <link rel="stylesheet" href="style/bem/message-list.css">
+    <link rel="stylesheet" href="style/bem/message-area.css">
 </head>
 
 <body>
@@ -44,41 +49,67 @@
     </div>
 </div>-->
 
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6">-->
+            <!--&lt;!&ndash;<card></card>&ndash;&gt;-->
+            <!--<chat-window></chat-window>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <!--<card></card>-->
-            <chat-window></chat-window>
-
-        </div>
-
-    </div>
+    <chat-base>
+        <chat-nav-bar></chat-nav-bar>
+        <message-list></message-list>
+        <message-area></message-area>
+    </chat-base>
 </div>
 
 
 
+
+
 <script src="app/app.module.js"></script>
-<script src="app/color-item/color-item.component.js"></script>
-<script src="app/color-item/color-item.controller.js"></script>
+<script src="app/theme/color-item/color-item.component.js"></script>
+<script src="app/theme/color-item/color-item.controller.js"></script>
 
-<script src="app/color-palette/color-palette.component.js"></script>
-<script src="app/color-palette/color-palette.controller.js"></script>
-<script src="app/color-palette/color-palette.service.js"></script>
+<script src="app/theme/color-palette/color-palette.component.js"></script>
+<script src="app/theme/color-palette/color-palette.controller.js"></script>
+<script src="app/theme/color-palette/color-palette.service.js"></script>
 
-<script src="app/theme-item/theme-item.component.js"></script>
-<script src="app/theme-item/theme-item.controller.js"></script>
+<script src="app/theme/theme-item/theme-item.component.js"></script>
+<script src="app/theme/theme-item/theme-item.controller.js"></script>
 
-<script src="app/theme-palette/theme-palette.component.js"></script>
-<script src="app/theme-palette/theme-palette.controller.js"></script>
+<script src="app/theme/theme-palette/theme-palette.component.js"></script>
+<script src="app/theme/theme-palette/theme-palette.controller.js"></script>
 
-<script src="app/mockup/mockup.component.js"></script>
-<script src="app/mockup/mockup.controller.js"></script>
+<script src="app/theme/mockup/mockup.component.js"></script>
+<script src="app/theme/mockup/mockup.controller.js"></script>
 
 <script src="app/card/card.component.js"></script>
 <script src="app/card/card.controller.js"></script>
 
 <script src="app/chat/chat-window.component.js"></script>
 <script src="app/chat/chat-window.controller.js"></script>
+
+<script src="app/bem/chat-base/chat-base.component.js"></script>
+<script src="app/bem/chat-base/chat-base.controller.js"></script>
+
+<script src="app/bem/chat-nav-bar/chat-nav-bar.component.js"></script>
+<script src="app/bem/chat-nav-bar/chat-nav-bar.controller.js"></script>
+
+<script src="app/bem/message-list/message-list.component.js"></script>
+<script src="app/bem/message-list/message-list.controller.js"></script>
+
+<script src="app/bem/message-area/message-area.component.js"></script>
+<script src="app/bem/message-area/message-area.controller.js"></script>
+
+
+
+
+
 
 </body>
 </html>
