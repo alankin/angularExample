@@ -1,0 +1,175 @@
+@import 'theme-config'
+
+.window-base
+    margin 10px
+    padding 0 15px
+    background-color basic-color
+    border 1px solid basic-dark1-color
+    border-radius 8px
+    -webkit-border-radius 8px
+    -moz-border-radius 8px
+    box-shadow 0 1px 1px basic-light3-color
+    -webkit-box-shadow 0 1px 1px basic-light3-color
+    -moz-box-shadow 0 1px 1px basic-light3-color
+
+.window-major
+    background-color preset-color
+    border 1px solid major-color
+
+.header-base
+    padding 5px 8px
+    border 1px solid basic-dark1-color
+    background-color basic-color
+    border-radius 5px 5px 0 0
+    -webkit-border-radius 5px 5px 0 0
+    -moz-border-radius 5px 5px 0 0
+
+.header-major
+    border 2px solid major-color
+    background-color major-dark1-color
+    color preset-color
+
+
+.footer-base
+    padding 5px 8px
+    border-top 1px solid major-color
+    border-radius 0 0 6px 6px
+    -webkit-border-radius 0 0 6px 6px
+    -moz-border-radius 0 0 6px 6px
+
+
+.msg-base
+    margin 5px
+
+
+.msg-bubble 
+    padding 5px
+    position relative
+    min-width 65px
+    height auto
+    background-color basic-color
+    border 2px solid basic-dark1-color
+    border-radius 12px
+    -webkit-border-radius 10px
+    -moz-border-radius 10px
+    font-size 12px
+
+/*message bubble left*/
+.msg-bubble-leftbefore 
+    content ' '
+    position absolute
+    width 0
+    height 0
+    left -25px
+    right auto
+    top 18px
+    bottom auto
+    border 12px solid
+    border-color transparent basic-dark1-color transparent transparent
+
+
+.msg-bubble-leftafter 
+    content ' '
+    position absolute
+    width 0
+    height 0
+    left -22px
+    right auto
+    top 18px
+    bottom auto
+    border 12px solid
+    border-color transparent basic-color transparent transparent
+
+/*message bubble left accent*/
+.msg-bubble-left-accentbefore
+    border-color transparent accent-color transparent transparent
+
+.msg-bubble-left-accentafter
+    border-color transparent accent-light1-color transparent transparent
+
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent
+    background-color accent-light1-color
+    border-color accent-color
+
+
+/*message bubble left accent*/
+.msg-bubble-left-accent-dark3before
+    border-color transparent accent-dark2-color transparent transparent
+
+.msg-bubble-left-accent-dark3after
+    border-color transparent accent-light1-color transparent transparent
+
+.msg-bubble.msg-bubble-left.msg-bubble-left-accent-dark3
+    background-color accent-light1-color
+    border-color accent-dark2-color
+
+
+/*message bubble left major*/
+.msg-bubble-left-majorbefore
+    border-color transparent major-color transparent transparent
+
+.msg-bubble-left-majorafter
+    border-color transparent major-light1-color transparent transparent
+
+.msg-bubble.msg-bubble-left.msg-bubble-left-major
+    background-color major-light1-color
+    border-color major-color
+
+
+/*message bubble-right*/
+.msg-bubble-rightbefore 
+    content ' '
+    position absolute
+    width 0
+    height 0
+    left auto
+    right -25px
+    top 18px
+    bottom auto
+    border 12px solid
+    border-color transparent transparent transparent basic-dark1-color
+
+.msg-bubble-rightafter 
+    content ' '
+    position absolute
+    width 0
+    height 0
+    left auto
+    right -22px
+    top 18px
+    bottom auto
+    border 12px solid
+    border-color transparent transparent transparent basic-color
+
+/*message bubble-right-accent*/
+.msg-bubble-right-accentbefore
+    border-color transparent transparent transparent accent-dark3-color
+
+.msg-bubble-right-accentafter
+    border-color transparent transparent transparent accent-light1-color
+
+.msg-bubble.msg-bubble-right.msg-bubble-right-accent
+    background-color accent-light1-color
+    border-color accent-dark3-color
+
+/*message bubble-right-good-dark3*/
+.msg-bubble-right-good-dark3before
+    border-color transparent transparent transparent good-dark3-color
+
+.msg-bubble-right-good-dark3after
+    border-color transparent transparent transparent good-light1-color
+
+.msg-bubble.msg-bubble-right.msg-bubble-right-good-dark3
+    background-color good-light1-color
+    border-color good-dark3-color
+
+/*message bubble-right-major*/
+.msg-bubble-right-majorbefore
+    border-color transparent transparent transparent major-color
+
+.msg-bubble-right-majorafter
+    border-color transparent transparent transparent major-light1-color
+
+.msg-bubble.msg-bubble-right.msg-bubble-right-major
+    background-color major-light1-color
+    border-color major-color

@@ -2,6 +2,7 @@
   'use stric';
 
   var gulp = require('gulp');
+  var stylus = require('gulp-stylus');
   var runSequence = require('run-sequence').use(gulp);
   var wiredep = require('wiredep').stream;
   var browserSync = require('browser-sync').create();
@@ -27,6 +28,15 @@
       exclude: ['jquery', 'bootstrap.js']
     } ) )
     .pipe(gulp.dest('./src'));
+  });
+
+  gulp.task('compile-css', function(){
+    gulp.src([
+      './src/assets/test/stylus/base.styl',
+      './src/assets/test/stylus/chat-window.styl'
+    ])
+    .pipe(stylus())
+    .pipe(gulp.dest('./src/assets/test/css/'));
   });
 
   gulp.task('default', ['development']);
