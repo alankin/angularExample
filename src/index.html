@@ -58,28 +58,36 @@
 <body>
 <!--<ui-view></ui-view>-->
 
-    <div class="col-md-offset-10 col-md-2">
-        <form>
-            <div class="form-group">
-                <label>Select Theme</label>
-                <select class="form-control" ng-model="vm.css_theme"
-                        ng-options="theme.url as theme.name for theme in vm.themes">
-                </select>
-            </div>
-        </form>
-    </div>
+<div class="col-md-offset-10 col-md-2">
+    <form>
+        <div class="form-group">
+            <label>Select Theme</label>
+            <select class="form-control" ng-model="vm.css_theme"
+                    ng-options="theme.url as theme.name for theme in vm.themes">
+            </select>
+        </div>
+    </form>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <chat-window></chat-window>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <help-window></help-window>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <chat-window></chat-window>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <help-window></help-window>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container">
+    <chat-base>
+        <chat-nav-bar></chat-nav-bar>
+        <message-list></message-list>
+        <message-area></message-area>
+    </chat-base>
+</div>-->
 </body>
 </html>
